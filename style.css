@@ -1,0 +1,171 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Rubik', sans-serif;
+                }
+                
+                p {
+                    color: hsl(236, 100%, 87%);
+                    font-weight: lighter;
+                    font-size: small;
+                }
+                
+                h1,
+                h5,
+                h2 {
+                    font-weight: lighter;
+                }
+                
+                .container {
+                    align-items: center;
+                    padding: 5%;
+                }
+                
+                .content {
+                    flex-wrap: wrap;
+                    padding: 6%;
+                    display: grid;
+                    gap: 20px;
+                    color: white;
+                    background-color: hsl(226, 43%, 10%);
+                    grid-template-columns: repeat (4, 1fr);
+                    grid-template-rows: 200px 200px;
+                    grid-template-areas: 'jeremy work play study' 'jeremy exercise social selfCare';
+                }
+                
+                .item1 {
+                    grid-area: jeremy;
+                    background-color: hsl(235, 46%, 20%);
+                }
+                
+                .profile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    background-color: hsl(246, 80%, 60%);
+                    border-radius: 0.7rem;
+                    height: 80%;
+                    padding: 10%;
+                }
+                
+                .profile img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    border: 1.5px solid white;
+                }
+                
+                .item2 {
+                    grid-area: work;
+                    background-color: hsl(15, 100%, 70%);
+                }
+                
+                .item3 {
+                    grid-area: play;
+                    background-color: hsl(195, 74%, 62%);
+                }
+                
+                .item4 {
+                    grid-area: study;
+                    background-color: hsl(348, 100%, 68%);
+                }
+                
+                .item5 {
+                    background-color: hsl(145, 58%, 55%);
+                    grid-area: exercise;
+                }
+                
+                .item6 {
+                    background-color: hsl(264, 64%, 52%);
+                    grid-area: social;
+                }
+                
+                .item7 {
+                    background-color: hsl(43, 84%, 65%);
+                    grid-area: selfCare;
+                }
+                
+                .div-content {
+                    flex-wrap: wrap;
+                    padding: 10%;
+                    background-color: hsl(235, 46%, 20%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    border-radius: 0.7rem;
+                    height: 80%;
+                }
+                
+                .div-content2 {
+                    border-radius: 0.7rem;
+                    padding: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 30%;
+                }
+                
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .attribution {
+                    font-size: 11px;
+                    text-align: center;
+                }
+                
+                .attribution a {
+                    color: hsl(228, 45%, 44%);
+                }
+                
+                .content>div {
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 0.7rem;
+                    margin: 0.7rem;
+                    margin-top: 0;
+                }
+                
+                @media screen and (max-width:800px) {
+                    .container {
+                        align-items: center;
+                    }
+                    .content {
+                        flex-wrap: wrap;
+                        display: grid;
+                        grid-template-columns: repeat (1, 1fr);
+                        grid-template-rows: repeat (7, 200px);
+                        grid-template-areas: 'jeremy''work''play''study''exercise''social' 'selfCare';
+                    }
+                    .profile {
+                        flex-wrap: wrap;
+                        color: hsl(236, 100%, 87%);
+                        height: 70%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                    .profile img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                    .div-content2 {
+                        flex-wrap: wrap;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        padding: 10px;
+                    }
+                    .div-content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                    }
+                    .time {
+                        padding-top: 5px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
